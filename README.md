@@ -1,185 +1,87 @@
 # 🌍 Natural Disaster Intelligence Project  
-### Strategic Risk & Product-Oriented Analysis  
-**Status: Work in Progress**  
-**Author: Ailin Alvarez**
 
----
+## 📌 Overview
 
-# 🇺🇸 English Version
+This project presents an exploratory data analysis (EDA) of global natural disaster events recorded between 2023 and 2025. The analysis focuses on identifying temporal, geographic, and categorical patterns, as well as evaluating the social and economic impact of these events.
 
-## 🚧 Project Status: In Progress  
-This project is currently under active development.  
-The goal is to transform natural disaster event data into strategic insights that could support **risk assessment, decision-making, and potential product development**.
+The goal is to transform raw event data into structured insights that help better understand how natural disasters are distributed and how their consequences vary across regions and disaster types.
 
-The analysis is evolving toward a more structured framework focused on impact evaluation and actionable intelligence.
+## 🎯 Objectives
 
----
+This analysis aims to explore:
 
-## 🎯 Strategic Vision  
+The temporal distribution of natural disasters and potential seasonal patterns
+The geographic concentration of events across countries
+Differences in frequency across disaster types
+The social impact of disasters (affected population)
+The economic impact of disasters (estimated financial losses)
+The relationship between frequency, severity, and impact
 
-Natural disaster data is not only historical information — it can become a foundation for:
+## 📊 Dataset
 
-- Risk assessment frameworks  
-- Early-warning or monitoring tools  
-- Data-driven decision support systems  
-- Geographic vulnerability analysis  
-- Product features for disaster intelligence platforms  
+The dataset includes information about global natural disaster events, with the following key variables:
 
-This project explores how structured data analysis can inform strategic and operational decisions.
+- date — date of the event
+- location — country where the event occurred
+- disaster_type — category of disaster (e.g., earthquake, flood)
+- affected_population — number of people affected
+- population — total population of the country
+- severity_level — severity classification
+- is_major_disaster — indicator of major events
+- estimated_economic_loss_usd — estimated financial loss
+- km2 — country surface area
 
----
+An additional dataset was used to enrich the analysis with population and geographic information.
 
-## 🔍 Project Objectives  
+## 🔍 Methodology
 
-- Analyze frequency and distribution of disaster events  
-- Identify high-risk regions and recurring patterns  
-- Study time-based trends for forecasting potential risk  
-- Evaluate impact-related variables  
-- Build a structured analytical base for future modeling or dashboards  
+The project follows a structured exploratory data analysis approach:
 
----
+- Data preprocessing
+    - Date transformation and feature engineering (year, month, week)
+    - Data cleaning and validation
+- Exploratory analysis
+    - Temporal analysis (seasonality and distribution over time)
+    - Geographic analysis (event concentration by country)
+    - Disaster type analysis (frequency comparison)
+- Impact analysis
+    - Social impact
+        - Absolute (affected population)
+        - Relative (proportion of population affected)
+    - Economic impact
+        - Total losses
+        - Average loss per event
+        - Impact by severity
 
-## 🧠 Product & Risk Perspective  
+## 📈 Key Insights
 
-From a **Product perspective**, this project explores:
-- What insights could be transformed into a data product?
-- What metrics matter most for stakeholders?
-- How can disaster data be structured for usability?
+- Natural disasters are not evenly distributed over time, showing patterns that suggest seasonal dynamics.
+- Events tend to concentrate geographically, with certain regions experiencing higher exposure.
+- Disaster types vary significantly in frequency, with some occurring more regularly than others.
+- Social impact differs when measured in absolute vs relative terms, highlighting differences between large and small populations.
+- Economic losses are not solely driven by the number of events; less frequent disasters can generate disproportionately high financial damage.
+- Severity plays a key role, as major disasters account for a significant share of total economic impact.
 
-From a **Risk Analysis perspective**, it focuses on:
-- Identifying high-exposure areas  
-- Detecting patterns in severity or recurrence  
-- Supporting risk mitigation strategy  
+## 🧠 Conclusions
 
----
+Natural disasters are multidimensional phenomena whose impact cannot be understood through a single metric. Their occurrence and consequences vary across time, geography, and type, while social and economic impacts do not always align.
 
-## 🛠 Tools & Technologies  
-- Python  
-- pandas  
-- numpy  
-- matplotlib / seaborn  
-- (Future integration: geospatial tools, time-series models, dashboards)
+A comprehensive analysis requires considering both frequency and severity, as well as combining absolute and relative measures to better assess vulnerability and exposure.
 
----
+## ⚠️ Limitations
+- The dataset contains estimated values for economic losses
+- Differences in reporting across countries may affect comparability
+- No external socio-economic indicators (e.g., GDP) are included
+- The analysis is exploratory and does not infer causal relationships
 
-## 📊 Current Phase  
 
-✔ Data cleaning and structuring  
-✔ Exploratory data analysis  
-✔ Trend identification  
-✔ Pattern detection  
+## 🛠️ Tools & Technologies
+ Python
+Pandas
+Matplotlib / Seaborn
+Jupyter Notebook
 
----
-
-## 🔮 Next Development Steps  
-
-- Advanced statistical analysis  
-- Time-series modeling  
-- Geographic clustering or mapping  
-- Risk scoring framework  
-- Potential dashboard or decision-support prototype  
-
----
-
-## ⭐ Why This Project Matters  
-
-This project reflects the ability to:
-- Think beyond descriptive analytics  
-- Connect data analysis to strategic decision-making  
-- Translate raw data into potential product opportunities  
-- Approach problems with a structured risk mindset  
-
-It demonstrates both analytical capability and strategic thinking.
-
----
-
----
-
-# 🇪🇸 Versión en Español
-
-## 🚧 Estado del Proyecto: En Proceso  
-Este proyecto se encuentra en desarrollo activo.  
-El objetivo es transformar datos de eventos de desastres naturales en insights estratégicos que puedan apoyar la **evaluación de riesgos, la toma de decisiones y el posible desarrollo de productos basados en datos**.
-
-El análisis está evolucionando hacia un enfoque más estructurado orientado a impacto y utilidad práctica.
-
----
-
-## 🎯 Visión Estratégica  
-
-Los datos de desastres no son solo información histórica: pueden convertirse en la base para:
-
-- Marcos de evaluación de riesgo  
-- Herramientas de monitoreo o alerta temprana  
-- Sistemas de soporte para decisiones  
-- Análisis de vulnerabilidad geográfica  
-- Funcionalidades para plataformas de inteligencia de riesgo  
-
-Este proyecto explora cómo el análisis de datos puede generar valor estratégico.
-
----
-
-## 🔍 Objetivos del Proyecto  
-
-- Analizar frecuencia y distribución de eventos  
-- Identificar regiones de alto riesgo  
-- Estudiar tendencias temporales  
-- Evaluar variables de impacto  
-- Construir una base estructurada para futuros modelos o dashboards  
-
----
-
-## 🧠 Enfoque Producto y Riesgo  
-
-Desde una perspectiva de **Producto**, el proyecto explora:
-- ¿Qué insights podrían convertirse en un producto de datos?
-- ¿Qué métricas son relevantes para stakeholders?
-- ¿Cómo estructurar la información para que sea usable?
-
-Desde una perspectiva de **Análisis de Riesgo**, se enfoca en:
-- Identificar zonas de mayor exposición  
-- Detectar patrones de recurrencia o severidad  
-- Apoyar estrategias de mitigación  
-
----
-
-## 🛠 Herramientas y Tecnologías  
-
-- Python  
-- pandas  
-- numpy  
-- matplotlib / seaborn  
-- (Próxima integración: herramientas geoespaciales, modelos de series temporales, dashboards)
-
----
-
-## 📊 Fase Actual  
-
-✔ Limpieza y estructuración de datos  
-✔ Análisis exploratorio  
-✔ Identificación de tendencias  
-✔ Detección de patrones  
-
----
-
-## 🔮 Próximos Pasos  
-
-- Análisis estadístico avanzado  
-- Modelado de series temporales  
-- Agrupamiento geográfico o mapeo  
-- Construcción de un sistema de scoring de riesgo  
-- Desarrollo potencial de dashboard o prototipo de soporte a decisiones  
-
----
-
-## ⭐ Por Qué Este Proyecto Es Relevante  
-
-Este proyecto demuestra capacidad para:
-- Pensar estratégicamente más allá del análisis descriptivo  
-- Conectar datos con decisiones  
-- Identificar oportunidades de producto  
-- Abordar problemas desde una mentalidad de gestión de riesgos  
-
-Combina análisis técnico con visión estratégica.
-
----
+## 📎 Project Structure
+disaster_event.ipynb → main analysis notebook
+synthetic_disaster_events_2025.csv → primary dataset
+pais_km2_pop.csv → supplementary dataset
